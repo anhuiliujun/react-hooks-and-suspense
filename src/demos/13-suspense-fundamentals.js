@@ -7,7 +7,7 @@ function PokemonInfo({ pokemonName }) {
   const pokemon = cache[pokemonName];
   if (!pokemon) {
     const promise = fetchPokemon(pokemonName).then(
-      p => (cache[pokemonName] = p)
+      p => (cache[pokemonName] = p || 'EMPTY')
     );
     throw promise;
   }
