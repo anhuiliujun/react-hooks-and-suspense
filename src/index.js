@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./demos/13-suspense-fundamentals";
+import App from "./App"
 
 import "./styles.css";
 
