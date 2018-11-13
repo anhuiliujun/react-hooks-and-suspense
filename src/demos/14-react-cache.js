@@ -1,9 +1,9 @@
 import React, { useState, Suspense } from "react";
-import { createCache, createResource } from "react-cache";
+// import { createCache, createResource } from "react-cache";
 import fetchPokemon from "./fetch-pokemon";
 
-const cache = createCache();
-const myPokemon = createResource(fetchPokemon);
+const cache = {} //createCache();
+const myPokemon = {}//createResource(fetchPokemon);
 
 function PokemonInfo({ pokemonName }) {
   const pokemon = myPokemon.read(cache, pokemonName);
