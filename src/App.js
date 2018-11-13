@@ -10,7 +10,7 @@ export default function(props){
 
   return(
     <>
-      <label>请选择展示的例子:</label>
+      <label>Select display demo:</label>
       <select onChange={changeDemo}>
         {
           demoOptions
